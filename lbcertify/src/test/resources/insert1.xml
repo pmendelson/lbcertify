@@ -17,6 +17,9 @@
 			<column name="c1" value="v1" />
 			<column name="c2" value="20" />
 		</insert>
-		
+		<update tableName="test1">
+			<column name="c2" value="25" />
+			<where>c1='v1'</where>
+		</update>
 	</changeSet>
 </databaseChangeLog>

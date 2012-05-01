@@ -9,8 +9,6 @@ import liquibase.database.core.H2Database;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
 
-import org.testng.annotations.Test;
-
 public class H2Client {
 
 	/**
@@ -25,7 +23,6 @@ public class H2Client {
 		return SingletonHolder.INSTANCE;
 	}
 
-	@Test
 	public Database createLiquibaseDatabase() throws ClassNotFoundException, SQLException, LiquibaseException {
 		Class.forName("org.h2.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:h2:mem:c1;MODE=Oracle", "sa", "");

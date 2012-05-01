@@ -5,8 +5,6 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.testng.annotations.Test;
-
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 
@@ -24,7 +22,6 @@ public class SqlCatcher {
 		return buff;
 	}
 
-	@Test
 	public List<String> getSqlLines(final String tableName) {
 		List<String> r = new ArrayList<String>();
 		r.addAll(Collections2.filter(getSqlLines(), new Predicate<String>() {
