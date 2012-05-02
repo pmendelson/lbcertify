@@ -5,6 +5,7 @@
 	<artifactId>liquibase-certification</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Liquibase Functional Tests</name>
+	<description>Tools to certify the quality of a liquibase release.</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.liquibase</groupId>
@@ -24,7 +25,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.5.1</version>
+			<version>6.5.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -34,5 +35,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<description>Tools to certify the quality of a liquibase release.</description>
 </project>
