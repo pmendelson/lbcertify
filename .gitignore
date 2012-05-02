@@ -4,3 +4,12 @@
 *.jar
 *.war
 *.ear
+
+# Maven / testng
+target/
+test-output
+
+# Eclipse
+.classpath
+.project
+.settings
